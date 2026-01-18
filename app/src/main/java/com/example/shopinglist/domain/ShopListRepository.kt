@@ -2,7 +2,7 @@ package com.example.shopinglist.domain
 
 interface ShopListRepository {
 
-    fun addShopItem(item: ShopItem)
+    fun addShopItem(shopItem: ShopItem)
 
     fun deleteShopItem(shopItem: ShopItem)
 
