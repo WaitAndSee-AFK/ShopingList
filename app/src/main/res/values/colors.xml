@@ -2,4 +2,34 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="olivine">#A6C48A</color>
+    <color name="OldRose">#CB8589</color>
+    <color name="Aquamarine">#73FBD3</color>
+    <color name="FluorescentCyan">#44E5E7</color>
+    <color name="VividSkyBlue">#59D2FE</color>
+    <color name="ChefchaouenBlue">#4A8FE7</color>
+    <color name="BlueCrayola">#5C7AFF</color>
+    <color name="Citron">#C6CA53</color>
+    <color name="BurntSienna">#EC7357</color>
+    <color name="Cream">#FBFFB9</color>
+    <color name="Sunset">#FDD692</color>
+    <color name="Maize">#FFF07C</color>
+    <color name="ScreaminGreen">#80FF72</color>
+    <color name="ElectricBlue">#7EE8FA</color>
+    <color name="TeaRose">#EEC0C6</color>
+    <color name="LightCorral">#E58C8A</color>
+    <color name="Viridian">#679289</color>
+    <color name="Skobeloff">#1D7874</color>
+    <color name="Peach">#F4C095</color>
+    <color name="MintGreen">#D0F4EA</color>
+    <color name="CadetGrey">#829399</color>
+    <color name="PaynesGrey">#545F66</color>
+    <color name="Lime">#BAFF29</color>
+    <color name="Honeydew">#F1FFE7</color>
+    <color name="SilverLakeBlue">#6290C3</color>
+    <color name="SpaceCadet">#1A1B41</color>
+    <color name="PersianIndigo">#360568</color>
+    <color name="Tekhelet">#5B2A86</color>
+    <color name="Celadon">#A5E6BA</color>
+    <color name="QuinacridoneMagenta">#7E4E60</color>
 </resources>

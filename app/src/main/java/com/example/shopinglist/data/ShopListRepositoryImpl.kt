@@ -10,7 +10,7 @@ import kotlin.random.Random
 object ShopListRepositoryImpl : ShopListRepository {
 
     private val shopListLD = MutableLiveData<List<ShopItem>>()
-    private val shopList = mutableListOf<ShopItem>()
+    private val shopList = sortedSetOf(Comparator<ShopItem> { o1, o2 -> o1.id.compareTo(o2.id) })
     val _shopList: List<ShopItem>
         get() = shopList.toList()
 
@@ -50,8 +50,8 @@ object ShopListRepositoryImpl : ShopListRepository {
     }
 
     init {
-        for (i in 0 until 10) {
-            addShopItem(ShopItem("Name + $i", i, true))
+        for (i in 0 until 120) {
+            addShopItem(ShopItem("Name $i", i, Random.nextBoolean()))
         }
     }
 
