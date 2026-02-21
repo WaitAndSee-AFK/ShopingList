@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">ShopingList</string>
     <string name="add_shop_item_content_description">Add shop item</string>
+    <string name="input_name_item">Название: </string>
+    <string name="input_count_item">Количество: </string>
+    <string name="button_create_or_update_item">Записать</string>
+    <string name="error_input_name">Ошибка при написании названия</string>
+    <string name="error_input_count">Ошибка при написании количества</string>
 </resources>
