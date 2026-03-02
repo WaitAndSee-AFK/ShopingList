@@ -33,10 +33,12 @@ class ShopItemViewModel : ViewModel() {
     val shouldCloseScreen: LiveData<Unit>
         get() = _shouldCloseScreen
 
+
     fun getShopItem(shopItemId: Int) {
         val item = getShopItemUseCase.getShopItem(shopItemId)
         _shopItem.value = item
     }
+
 
     fun addShopItem(inputName: String?, inputCount: String?) {
         val name = parseName(inputName)
@@ -48,6 +50,7 @@ class ShopItemViewModel : ViewModel() {
             finishWork()
         }
     }
+
 
     fun editShopItem(inputName: String?, inputCount: String?) {
         val name = parseName(inputName)
@@ -62,6 +65,7 @@ class ShopItemViewModel : ViewModel() {
         }
     }
 
+
     private fun validateInput(name: String, count: Int): Boolean {
         var result = true
         if (name.isBlank()) {
@@ -75,13 +79,16 @@ class ShopItemViewModel : ViewModel() {
         return result
     }
 
+
     fun resetErrorInputCount() {
         _errorInputCount.value = false
     }
 
+
     fun resetErrorInputName() {
         _errorInputName.value = false
     }
+
 
     private fun parseCount(inputCount: String?): Int {
         return try {
@@ -91,9 +98,11 @@ class ShopItemViewModel : ViewModel() {
         }
     }
 
+
     private fun parseName(inputName: String?): String {
         return inputName?.trim() ?: ""
     }
+
 
     private fun finishWork() {
         _shouldCloseScreen.value = Unit
