@@ -1,4 +1,5 @@
 plugins {
+    alias(libs.plugins.kapt)
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
 }
@@ -32,6 +33,9 @@ android {
     }
     kotlinOptions {
         jvmTarget = "11"
+    }
+    buildFeatures {
+        dataBinding = true
     }
 }
 
