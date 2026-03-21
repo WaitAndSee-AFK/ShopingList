@@ -8,7 +8,7 @@ import androidx.room.RoomDatabase
 @Database(entities = [ShopItemDbModel::class], version = 1, exportSchema = false)
 abstract class AppDatabase : RoomDatabase() {
 
-    abstract fun shopListDao(): ShopListDao 
+    abstract fun shopListDao(): ShopListDao
 
     companion object {
         private var INSTANCE: AppDatabase? = null
