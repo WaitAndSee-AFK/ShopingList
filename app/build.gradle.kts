@@ -1,4 +1,5 @@
 plugins {
+    id("com.google.devtools.ksp")
     alias(libs.plugins.kapt)
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
@@ -40,6 +41,14 @@ android {
 }
 
 dependencies {
+    //ViewModel
+    implementation(libs.viewModel)
+    //Room
+    implementation(libs.room)
+    // Кодогенератор Room
+    ksp(libs.room.compiler)
+    // optional - Kotlin Extensions and Coroutines support for Room
+    implementation(libs.room.ktx)
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
@@ -61,7 +70,6 @@ dependencies {
     // Fragment KTX
     implementation("androidx.fragment:fragment-ktx:1.6.2")
 
-    testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
 }
